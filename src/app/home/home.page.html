@@ -1,20 +1,21 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Ionic Blank
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+     </ion-buttons>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+ </ion-header>
+  
+ <ion-content>
+   <div class="ion-padding">
+    <p>Soy la página Home</p>
+    <ion-button routerLink="/pagina2" routerDirection="forward">Ir a la página 2</ion-button>
+    <ion-button routerLink="/pagina3" routerDirection="back">Ir a la pagina 3</ion-button>
+    <ion-button routerLink="/pagina4" routerDirection="back">Ir a la pagina 4</ion-button>
+    <ion-button routerLink="/pagina5" routerDirection="back">Ir a la pagina 5</ion-button>
   </div>
-</ion-content>
+   </div>
+ </ion-content>
