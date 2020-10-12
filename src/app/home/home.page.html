@@ -4,7 +4,7 @@
       Pagina Home
     </ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-back-button   text ="back" defaultHref="/home"></ion-back-button>
      </ion-buttons>
   </ion-toolbar>
  </ion-header>
@@ -13,12 +13,16 @@
  <ion-content>
    <div class="ion-padding">
     <p>Soy la página Home</p>
-    <ion-button routerLink="/pagina2" routerDirection="forward">Ir a la página 2</ion-button>
-    
-    <ion-button routerLink="/pagina3" routerDirection="back">Ir a la pagina 3</ion-button>
-    <ion-button routerLink="/pagina4" routerDirection="back">Ir a la pagina 4</ion-button>
-    <ion-button routerLink="/pagina5" routerDirection="back">Ir a la pagina 5</ion-button>
-  </div>
+    <TABLE >
+      <TR>
+           <TD><ion-button routerLink="/pagina2" routerDirection="forward">página 2</ion-button> </TD> 
+           <TD><ion-button routerLink="/pagina3" routerDirection="back"> pagina 3</ion-button></TD>
+      </TR> <TR>
+           <TD><ion-button routerLink="/pagina4" routerDirection="back">pagina 4</ion-button></TD> 
+           <TD><ion-button routerLink="/pagina5" routerDirection="back">pagina 5</ion-button></TD>
+ </TR>
+ </TABLE>
+</div>
    
  </ion-content>
  
